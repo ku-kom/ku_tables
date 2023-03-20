@@ -12,6 +12,20 @@ tt_content.ku_tables {
     ################
     templateName = Table
 
+    templateRootPaths {
+        10 = EXT:ku_tables/Resources/Private/Templates/
+        20 = {$ku_tables.templates.templateRootPath}
+    }
+	partialRootPaths {
+		10 = EXT:ku_tables/Resources/Private/Partials/
+        20 = {$ku_tables.templates.partialRootPath}
+	}
+
+    layoutRootPaths {
+        10 = EXT:ku_tables/Resources/Private/Layouts/
+        20 = {$ku_tables.templates.layoutRootPath}
+    }
+
     ##########################
     ### DATA PREPROCESSING ###
     ##########################

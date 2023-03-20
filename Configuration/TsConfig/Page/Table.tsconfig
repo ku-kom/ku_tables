@@ -3,8 +3,8 @@
 ####################################
 mod.wizards.newContentElement.wizardItems.data {
     elements {
-        table {
-            iconIdentifier = content-table
+        ku_tables {
+            iconIdentifier = ku-tables-icon
             title = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_table_title
             description = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_table_description
             tt_content_defValues {
@@ -17,7 +17,7 @@ mod.wizards.newContentElement.wizardItems.data {
 mod.wizards.newContentElement.wizardItems.text {
     elements {
         table {
-            iconIdentifier = content-table
+            iconIdentifier = ku-tables-icon
             title = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_table_title
             description = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_table_description
             tt_content_defValues {

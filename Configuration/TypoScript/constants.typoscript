@@ -1,0 +1,10 @@
+ku_tables {
+    templates {
+        # cat=KU Tables/file; type=string; label=Layout Root Path: Path to templates (with a trailing slash).
+        templateRootPath = EXT:ku_tables/Resources/Private/Templates/
+        # cat=KU Tables/file; type=string; label=Partial Root Path: Path to partials (with a trailing slash).
+        partialRootPath = EXT:ku_tables/Resources/Private/Partials/
+        # cat=KU Tables/file; type=string; label=Layout Root Path: Path to templates (with a trailing slash).
+        layoutRootPath = EXT:ku_tables/Resources/Private/Layouts/
+    }
+}

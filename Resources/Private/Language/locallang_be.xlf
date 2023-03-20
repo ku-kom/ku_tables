@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2023-01-15UTC07:12:052">
+    <file source-language="en" datatype="plaintext" original="messages" date="2023-01-15UTC07:12:052" product-name="ku_tables">
         <header>
         </header>
         <body>
-        <trans-unit id="tablelayout.hover">
+        <trans-unit id="title" xml:space="preserve">
+            <source>KU tables</source>
+        </trans-unit>
+        <trans-unit id="tablelayout.hover" xml:space="preserve">
             <source>Hover</source>
         </trans-unit>
-        <trans-unit id="tablelayout.condensed">
+        <trans-unit id="tablelayout.condensed" xml:space="preserve">
             <source>Condensed table</source>
         </trans-unit>
         </body>

@@ -7,7 +7,7 @@
  */
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Tables',
+    'title' => 'KU Tables',
     'description' => 'Adds content element to create accessible tables.',
     'category' => 'templates',
     'constraints' => [
