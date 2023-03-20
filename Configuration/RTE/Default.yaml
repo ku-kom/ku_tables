@@ -5,8 +5,8 @@ imports:
 
 editor:
     externalPlugins:
-        ku_table:
-            resource: "EXT:ku_table/Resources/Public/CKEditor/Plugins/Table/plugin.min.js"
+        ku_tables:
+            resource: "EXT:ku_tables/Resources/Public/CKEditor/Plugins/Table/plugin.min.js"
 
     config:
         contentsCss: "EXT:bootstrap_package/Resources/Public/Css/bootstrap5-rte.min.css"
@@ -103,7 +103,7 @@ editor:
             - text-justify
 
         extraPlugins:
-            - ku_table
+            - ku_tables
 
         removePlugins:
             - image

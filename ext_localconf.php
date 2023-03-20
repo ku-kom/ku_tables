@@ -23,5 +23,5 @@ if ($typo3VersionNumber < 12000000) {
    ');
 }
 
-
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][\UniversityOfCopenhagen\KuTables\Updates\TableContentElementUpdate::class] = \UniversityOfCopenhagen\KuTables\Updates\TableContentElementUpdate::class;
+// Add default RTE configuration for bootstrap package
+$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['ku_tables'] = 'EXT:ku_tables/Configuration/RTE/Default.yaml';
