@@ -1,0 +1,13 @@
+{
+    "name": "ku_tables",
+    "version": "1.0.0",
+    "description": "Content element for creating tables.",
+    "keywords": [
+        "TYPO3",
+        "Bootstrap",
+        "PHP",
+        "JavaScript"
+    ],
+    "author": "Nanna Ellegaard",
+    "license": "ISC"
+}
