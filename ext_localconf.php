@@ -22,6 +22,3 @@ if ($typo3VersionNumber < 12000000) {
       @import "EXT:ku_tables/Configuration/page.tsconfig"
    ');
 }
-
-// Add default RTE configuration for bootstrap package
-$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['ku_tables'] = 'EXT:ku_tables/Configuration/RTE/Default.yaml';

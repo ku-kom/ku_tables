@@ -3,16 +3,16 @@
 ####################################
 mod.wizards.newContentElement.wizardItems.data {
     elements {
-        ku_tables {
+        table {
             iconIdentifier = ku-tables-icon
             title = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_table_title
             description = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_table_description
             tt_content_defValues {
-                CType = ku_tables
+                CType = table
             }
         }
     }
-    show := addToList(ku_tables)
+    show := addToList(table)
 }
 mod.wizards.newContentElement.wizardItems.text {
     elements {
@@ -21,9 +21,9 @@ mod.wizards.newContentElement.wizardItems.text {
             title = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_table_title
             description = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_table_description
             tt_content_defValues {
-                CType = ku_tables
+                CType = table
             }
         }
     }
-    show := addToList(ku_tables)
+    show := addToList(table)
 }

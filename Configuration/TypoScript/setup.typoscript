@@ -3,9 +3,9 @@
 #### CTYPE: TABLE ####
 ######################
 
-tt_content.ku_tables >
-tt_content.ku_tables =< lib.contentElement
-tt_content.ku_tables {
+tt_content.table >
+tt_content.table =< lib.contentElement
+tt_content.table {
 
     ################
     ### TEMPLATE ###
