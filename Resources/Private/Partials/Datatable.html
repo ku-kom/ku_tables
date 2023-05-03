@@ -5,7 +5,10 @@
     <f:asset.script identifier="datatable{data.uid -> f:format.raw()}">
 
     document.addEventListener('DOMContentLoaded', () => {
-        let {datatable} = new DataTable('.<f:format.raw>{datatable}</f:format.raw>');
+        let {datatable} = new DataTable('.<f:format.raw>{datatable}</f:format.raw>', {
+            responsive: true
+        });
+
     });
     </f:asset.script>
 
