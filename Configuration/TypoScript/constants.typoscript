@@ -7,4 +7,10 @@ ku_tables {
         # cat=KU Tables/file; type=string; label=Layout Root Path: Path to templates (with a trailing slash).
         layoutRootPath = EXT:ku_tables/Resources/Private/Layouts/
     }
+    assets {
+        # cat=KU tables/Assets/t0; type=string; label=CSS assets: Path to stylesheet.
+        Css = EXT:ku_tables/Resources/Public/Css/Dist/datatables.min.css
+        # cat=KU tables/Assets/t1; type=string; label=JavaScript assets: Path to javaScript file.
+        Js = EXT:ku_tables/Resources/Public/JavaScript/Dist/datatables.min.js
+    }
 }

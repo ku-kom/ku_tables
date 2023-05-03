@@ -44,5 +44,32 @@ tt_content.table {
             as = table
         }
     }
+}
 
+page = PAGE
+page {
+    10 = FLUIDTEMPLATE
+    10 {
+        settings < ku_tables.pagecss
+        settings {
+            pagecss = {$ku_tables.assets.Css}
+        }
+        ##########################
+        #### OPTION TO ADD CSS ###
+        ##########################
+        # lib.ku_tables.pagecss = TEXT
+        # lib.ku_tables.pagecss {
+        #     if.isTrue = {$ku_tables.assets.Css}
+        #     value = {$ku_tables.assets.Css}
+        # }
+
+        ##########################
+        #### OPTION TO ADD JS ####
+        ##########################
+        # lib.ku_tables.pagejs = TEXT
+        # lib.ku_tables.pagejs {
+        #     if.isTrue = {$ku_tables.assets.Js}
+        #     value = {$ku_tables.assets.Js}
+        # }
+    }
 }
