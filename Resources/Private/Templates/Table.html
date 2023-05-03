@@ -4,7 +4,7 @@
 
         <f:if condition="{table}">
             <div class="table-responsive">
-                <table class="table{f:if(condition: data.table_class, then: ' table-{data.table_class}')}">
+                <table class="table{f:if(condition: data.table_class, then: ' table-{data.table_class}' )} table_{data.uid}">
                     <f:if condition="{data.table_caption}">
                         <caption>{data.table_caption}</caption>
                     </f:if>
@@ -64,6 +64,7 @@
         </f:if>
         <f:if condition="{data.tx_ku_tables_enable_datatable} == 1">
             <f:asset.script identifier="{data.CType}_js" src="{f:cObject(typoscriptObjectPath: 'ku_tables.pagejs')}" />
+            <f:render partial="Datatable"  arguments="{_all}" />
         </f:if>
     
     </f:section>
