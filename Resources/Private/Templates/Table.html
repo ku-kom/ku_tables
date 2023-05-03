@@ -1,7 +1,7 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
     <f:layout name="Default" />
     <f:section name="Main">
-    <f:debug>{_all}</f:debug>
+
         <f:if condition="{table}">
             <div class="table-responsive">
                 <table class="table{f:if(condition: data.table_class, then: ' table-{data.table_class}')}">
@@ -59,11 +59,11 @@
             </div>
         </f:if>
 
-        <f:if condition="{data.tx_ku_tables_enable_datatable === 1}">
-            <f:asset.css identifier="{data.CType}_css" href="{f:cObject(typoscriptObjectPath: 'lib.ku_tables.pagecss')}" />
+        <f:if condition="{data.tx_ku_tables_enable_datatable} == 1">
+            <f:asset.css identifier="{data.CType}_css" href="{f:cObject(typoscriptObjectPath: 'ku_tables.pagecss')}" />
         </f:if>
-        <f:if condition="{data.tx_ku_tables_enable_datatable === 1}">
-            <f:asset.script identifier="{data.CType}_js" src="{f:cObject(typoscriptObjectPath: 'lib.ku_tables.pagejs')}" />
+        <f:if condition="{data.tx_ku_tables_enable_datatable} == 1">
+            <f:asset.script identifier="{data.CType}_js" src="{f:cObject(typoscriptObjectPath: 'ku_tables.pagejs')}" />
         </f:if>
     
     </f:section>

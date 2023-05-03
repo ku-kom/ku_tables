@@ -17,7 +17,7 @@
             <source>Enable datatable</source>
         </trans-unit>
         <trans-unit id="enable_datatable_descr" xml:space="preserve">
-            <source>Enable datatable for this table to make it more readable in mobile devices.</source>
+            <source>Enable datatable for this table to make it more readable on mobile devices.</source>
         </trans-unit>
         </body>
     </file>

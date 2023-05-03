@@ -42,9 +42,7 @@ call_user_func(function ($extKey ='ku_tables', $contentType ='table') {
                 'renderType' => 'checkboxToggle',
                 'items' => [
                     [
-                        0 => 'Enabled',
-                        'labelChecked' => 'Enabled',
-                        'labelUnchecked' => 'Disabled'
+                        0 => '',
                     ],
                 ],
             ],
@@ -54,8 +52,8 @@ call_user_func(function ($extKey ='ku_tables', $contentType ='table') {
     // Add checkbox to existing tables palette
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
         'tt_content',
-        'tableconfiguration',
+        'tableconfiguration', // table palette name
         'tx_ku_tables_enable_datatable',
-        'after:table_caption'
+        'after:table_caption' // Existing TCA
     );
 });
