@@ -3,7 +3,7 @@
 defined('TYPO3') or die('Access denied.');
 
 /**
- * Extend core tables TCA with checkbox to anable datatables.
+ * Extend core tables TCA with checkbox to enable datatables.
  */
 
 call_user_func(function ($extKey ='ku_tables', $contentType ='table') {
