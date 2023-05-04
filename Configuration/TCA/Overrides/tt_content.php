@@ -2,6 +2,9 @@
 
 defined('TYPO3') or die('Access denied.');
 
+/**
+ * Extend core tables TCA with checkbox to anable datatables.
+ */
 
 call_user_func(function ($extKey ='ku_tables', $contentType ='table') {
     // Add Content Element
@@ -16,22 +19,10 @@ call_user_func(function ($extKey ='ku_tables', $contentType ='table') {
         'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:title'
     );
 
-    // Add content element to selector list
-    // \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
-    //     'tt_content',
-    //     'CType',
-    //     [
-    //         'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:title',
-    //         $contentType,
-    //         'ku-tables-icon',
-    //         $extKey
-    //     ]
-    // );
-
     // Assign Icon
     $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes'][$contentType] = 'ku-tables-icon';
 
-    // Add checkbox element
+    // Add checkbox element to enable datatables
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
         'tx_ku_tables_enable_datatable' => [
             'exclude' => true,
