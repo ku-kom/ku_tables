@@ -1,29 +1,23 @@
 ####################################
 #### NEW CONTENT ELEMENT WIZARD ####
 ####################################
-mod.wizards.newContentElement.wizardItems.data {
+
+mod.wizards.newContentElement.wizardItems.common {
     elements {
         table {
-            iconIdentifier = ku-tables-icon
-            title = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_table_title
-            description = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_table_description
             tt_content_defValues {
-                CType = table
+                table_header_position = 1 // Set default table header position
             }
         }
     }
-    show := addToList(table)
 }
+
 mod.wizards.newContentElement.wizardItems.text {
     elements {
         table {
-            iconIdentifier = ku-tables-icon
-            title = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_table_title
-            description = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_table_description
             tt_content_defValues {
-                CType = table
+                table_header_position = 1 // Set default table header position
             }
         }
     }
-    show := addToList(table)
 }

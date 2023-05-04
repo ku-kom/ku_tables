@@ -17,16 +17,16 @@ call_user_func(function ($extKey ='ku_tables', $contentType ='table') {
     );
 
     // Add content element to selector list
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
-        'tt_content',
-        'CType',
-        [
-            'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:title',
-            $contentType,
-            'ku-tables-icon',
-            $extKey
-        ]
-    );
+    // \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+    //     'tt_content',
+    //     'CType',
+    //     [
+    //         'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:title',
+    //         $contentType,
+    //         'ku-tables-icon',
+    //         $extKey
+    //     ]
+    // );
 
     // Assign Icon
     $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes'][$contentType] = 'ku-tables-icon';
