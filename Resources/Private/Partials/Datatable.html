@@ -1,15 +1,15 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-    <f:variable name="datatable">table_{data.uid -> f:format.raw()}</f:variable>
-
-    <f:asset.script identifier="datatable{data.uid -> f:format.raw()}">
-
-    document.addEventListener('DOMContentLoaded', () => {
-        let {datatable} = new DataTable('.<f:format.raw>{datatable}</f:format.raw>', {
-            responsive: true
-        });
-
-    });
+    <f:asset.script identifier="datableFunctions" priority="1">
+        const getLang = () => {
+            const langMap = {
+                en: 'English',
+                da: 'Danish'
+            };
+            const lang = window.navigator.userLanguage || window.navigator.language || en;
+            const l = lang.split('-',1);
+            return `<f:format.raw>{f:cObject(typoscriptObjectPath: 'ku_tables.datatableLangFilePath')}</f:format.raw>${langMap[l]}.json`;
+        };
     </f:asset.script>
 
 </html>

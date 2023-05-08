@@ -9,5 +9,20 @@
         "JavaScript"
     ],
     "author": "Nanna Ellegaard",
-    "license": "ISC"
+    "license": "ISC",
+    "scripts": {
+        "concat:js": "rollup \"Resources/Public/JavaScript/Dist/ku-init-datatables.min.js\" \"Resources/Public/JavaScript/Src/datatables.min.js\" --dir \"Resources/Public/JavaScript/Dist/\"  --sourcemap",
+        "lint:js": "eslint --cache --cache-location .cache/.eslintcache",
+        "minify:js": "terser \"Resources/Public/JavaScript/Src/ku-init-datatables.js\" --output \"Resources/Public/JavaScript/Dist/ku-init-datatables.min.js\" --format quote_style=1 --compress",
+        "build:js": "npm-run-all lint:js && npm-run-all minify:js && npm-run-all concat:js",
+        "watch:js": "onchange \"Resources/Public/JavaScript/Src/*.js\" -- npm-run-all build:js",
+        "watch": "npm-run-all --parallel watch:*"
+    },
+    "devDependencies": {
+		"eslint": "^8.39.0",
+		"rollup": "^3.21.2",
+		"npm-run-all": "^4.1.5",
+		"onchange": "^7.1.0",
+        "terser": "^5.17.1"
+    }
 }
