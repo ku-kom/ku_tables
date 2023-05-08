@@ -2,22 +2,33 @@
 #### NEW CONTENT ELEMENT WIZARD ####
 ####################################
 
-// mod.wizards.newContentElement.wizardItems.common {
-//     elements {
-//         table {
-//             tt_content_defValues {
-//                 table_header_position = 1 // Set default table header position
-//             }
-//         }
-//     }
-// }
+// Set default table header position
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        table {
+            tt_content_defValues {
+                table_header_position = 1
+            }
+        }
+    }
+}
 
-// mod.wizards.newContentElement.wizardItems.text {
-//     elements {
-//         table {
-//             tt_content_defValues {
-//                 table_header_position = 1 // Set default table header position
-//             }
-//         }
-//     }
-// }
+mod.wizards.newContentElement.wizardItems.data {
+    elements {
+        table {
+            tt_content_defValues {
+                table_header_position = 1
+            }
+        }
+    }
+}
+
+mod.wizards.newContentElement.wizardItems.text {
+    elements {
+        table {
+            tt_content_defValues {
+                table_header_position = 1
+            }
+        }
+    }
+}
