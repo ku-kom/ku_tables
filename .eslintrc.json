@@ -22,6 +22,8 @@
     "arrow-body-style": "off",
     "capitalized-comments": "off",
     "no-negated-condition": "off",
-    "quotes": ["error", "single", { "allowTemplateLiterals": true }]
+    "quotes": ["error", "single", {
+      "allowTemplateLiterals": true }
+    ]
   }
 }
