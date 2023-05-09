@@ -6,9 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     'use strict';
 
     const tables = document.querySelectorAll('.table-datatable');
-    if (!tables) {
-        return;
-    }
 
     class KUdatatable {
         constructor(table) {
@@ -17,16 +14,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         initDatatable() {
+            /**
+            * Check if Datatables plugin exist
+            */
+            if (typeof DataTable === 'undefined') {
+                return;
+            }
+
+            /**
+             * Init Datatables
+             */
             this.datatable = new DataTable(this.datatable, {
                 responsive: true,
-                language: { url: getLang() }
+                language: {
+                    url: getLang()
+                }
             });
         }
-
     }
 
-    Array.from(tables).forEach((table) => {
-        const tableEl = new KUdatatable(table);
-    });
+    /**
+     * Assign datatables to tables
+     */
 
+    if (tables) {
+        Array.from(tables).forEach((table) => {
+            const tableEl = new KUdatatable(table);
+        });
+    }
 });
