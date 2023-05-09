@@ -16,7 +16,7 @@
         </f:if>
 
         <f:section name="tableContent">
-            <table class="table{f:if(condition: data.table_class, then: ' table-{data.table_class}' )} {f:if(condition: data.tx_ku_tables_enable_datatable, then: ' table-datatable' )} table_{data.uid}">
+            <table class="table{f:if(condition: data.table_class, then: ' table-{data.table_class}')} {f:if(condition: data.tx_ku_tables_enable_datatable, then: ' table-datatable' )} table_{data.uid}">
                 <f:if condition="{data.table_caption}">
                     <caption>{data.table_caption}</caption>
                 </f:if>
