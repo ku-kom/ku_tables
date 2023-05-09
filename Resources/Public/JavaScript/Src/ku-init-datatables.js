@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
              */
             this.datatable = new DataTable(this.datatable, {
                 responsive: true,
+                autoWidth: false,
                 language: {
                     url: getLang()
                 }
