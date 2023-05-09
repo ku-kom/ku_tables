@@ -25,8 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
              * Init Datatables
              */
             this.datatable = new DataTable(this.datatable, {
-                responsive: true,
-                autoWidth: false,
+                responsive: true, // Fold on mobile
+                autoWidth: false, // calculate width on resize
+                lengthChange: false, // Set table length before pagination
+                order: [[parseInt(this.datatable.dataset.col, 10), this.datatable.dataset.sortorder]], // Get values from data-col and data-sortorder attributes
                 language: {
                     url: getLang()
                 }
