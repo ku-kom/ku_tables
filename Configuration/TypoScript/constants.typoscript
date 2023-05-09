@@ -11,7 +11,7 @@ ku_tables {
         # cat=KU tables/Assets/t0; type=string; label=CSS assets: Path to stylesheet.
         Css = EXT:ku_tables/Resources/Public/Css/Dist/datatables.min.css
         # cat=KU tables/Assets/t1; type=string; label=JavaScript assets: Path to javaScript file.
-        Js = EXT:ku_tables/Resources/Public/JavaScript/Dist/ku.datatables.min.js
+        Js = EXT:ku_tables/Resources/Public/JavaScript/Dist/datatables.min.js
         # cat=KU tables/Assets/t2; type=string; label=Datatables language file. Path without language and file extension, e.g.: //cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Danish.json, becomes: //cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/
         datatableLangFilePath = //cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/
     }
