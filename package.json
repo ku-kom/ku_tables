@@ -12,7 +12,7 @@
     "license": "ISC",
     "scripts": {
         "lint:js": "eslint --cache --cache-location .cache/.eslintcache",
-        "minify:js": "terser \"Resources/Public/JavaScript/Src/ku-init-datatables.js\" --output \"Resources/Public/JavaScript/Dist/ku-init-datatables.min.js\" --format quote_style=1 --compress --sourcemap",
+        "minify:js": "terser \"Resources/Public/JavaScript/Src/ku-init-datatables.js\" --output \"Resources/Public/JavaScript/Dist/ku-init-datatables.min.js\" --format quote_style=1 --compress --source-map",
         "build:js": "npm-run-all lint:js && npm-run-all minify:js",
         "watch:js": "onchange \"Resources/Public/JavaScript/Src/*.js\" -- npm-run-all build:js",
         "watch": "npm-run-all --parallel watch:*"
