@@ -22,14 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             /**
-             * Check if tables exist
-             */
-            
-            if (!tables) {
-                return;
-            }
-
-            /**
              * Init Datatables
              */
             this.datatable = new DataTable(this.datatable, {
@@ -41,8 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    Array.from(tables).forEach((table) => {
-        const tableEl = new KUdatatable(table);
-    });
+    /**
+     * Assign datatables to tables
+     */
 
+    if (tables) {
+        Array.from(tables).forEach((table) => {
+            const tableEl = new KUdatatable(table);
+        });
+    }
 });
