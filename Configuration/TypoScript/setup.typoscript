@@ -51,15 +51,18 @@ tt_content.table {
 ##########################
 ku_tables.pagecss = TEXT
 ku_tables.pagecss.value = {$ku_tables.assets.Css}
+htmlSanitize = 1
 
 ##########################
 #### OPTION TO ADD JS ####
 ##########################
 ku_tables.pagejs = TEXT
 ku_tables.pagejs.value = {$ku_tables.assets.Js}
+htmlSanitize = 1
 
 ##################################################
 #### OPTION TO ADD DATATABLES LANGUAGE FILE PATH #
 ##################################################
 ku_tables.datatableLangFilePath = TEXT
 ku_tables.datatableLangFilePath.value = {$ku_tables.assets.datatableLangFilePath}
+htmlSanitize = 1
